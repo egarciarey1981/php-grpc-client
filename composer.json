@@ -1,0 +1,10 @@
+{
+    "require": {
+        "grpc/grpc": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "GRPC\\": "generated/GRPC"
+        }
+    }
+}

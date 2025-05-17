@@ -1,0 +1,13 @@
+services:
+  client:
+    build: .
+    stdin_open: true # docker run -i
+    tty: true        # docker run -t
+    volumes:
+      - ./:/code
+    networks:
+      - grpc-network
+
+networks:
+  grpc-network:
+    driver: bridge
